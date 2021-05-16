@@ -1,2 +1,252 @@
 # Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
-# OpenFile C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias2.v
+# OpenFile C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_test.v
+vsim -gui work.Neural_Network_tb
+# vsim -gui work.Neural_Network_tb 
+# Start time: 00:10:29 on May 17,2021
+# Loading work.Neural_Network_tb
+# Loading work.transfer_onehot_and_compare
+# Loading work.first_layer_cell
+# Loading work.weighted_sum1
+# Loading work.accumulator1
+# Loading work.weight_memory1
+# Loading work.bias1
+# Loading work.derivative_hidden_neuron
+# Loading work.delta_weight1
+# Loading work.delta_bias1
+# Loading work.second_layer_cell
+# Loading work.weighted_sum2
+# Loading work.accumulator2
+# Loading work.weight_memory2
+# Loading work.bias2
+# Loading work.delta_weight2
+# Loading work.delta_bias2
+run -all
+# Break key hit
+add wave -position insertpoint sim:/Neural_Network_tb/*
+run -all
+# --------------------------------------------------------------
+# Check, state is WAIT and counter is 0 at 50 ns
+# state is reset correctly
+# begin Inserting first pixel data and target_label at 50 ns
+# --------------------------------------------------------------
+# start_train_sw is high, let's check pixel data
+# --------------------------------------------------------------
+# [1.1] first_layer process is ended, and check end_state1
+# end_state1 signal is detected!
+# --------------------------------------------------------------
+# [1.2] check state is FIRST_LAYER at 15780 ns
+# Yes!, state is FIRST_LAYER!
+# --------------------------------------------------------------
+# [1.3] check hidden_neuron value at 15780 ns
+# --------------------------------------------------------------
+# [2.0]check state is SECOND_LAYER at 15800 ns
+# Yes!, state is SECOND_LAYER!
+# --------------------------------------------------------------
+# [2.1] check hidden_multiply value of SECOND_LAYER
+# --------------------------------------------------------------
+# [2.2] state2 is ended, check end_state2 signal at 20940 ns
+# Yes!, end_state2 signal is detected
+# --------------------------------------------------------------
+# [2.3] check output_neuron value of SECOND_LAYER state
+# output_neuron[ 0] = -475783253
+# output_neuron[ 1] = -391583633
+# output_neuron[ 2] = 27903657
+# output_neuron[ 3] = 691194847
+# output_neuron[ 4] = -226675579
+# output_neuron[ 5] = -332028556
+# output_neuron[ 6] = -1403662952
+# output_neuron[ 7] = 1750382963
+# output_neuron[ 8] = -60273185
+# output_neuron[ 9] = 603572246
+# --------------------------------------------------------------
+# [3.0] let's check current state is COMPARE at 20960 ns
+# Nice!! Current state is COMPARE
+# --------------------------------------------------------------
+# [3.1] check end_state3 signal is detected at 21120 ns
+# Yes!, end_state3 signal is detected
+# --------------------------------------------------------------
+# [3.2] check output_neuron value and one_hot at 21120 ns
+# output_neuron_onehot value is correct
+# --------------------------------------------------------------
+# [3.3] check matched signal for COMPARE module
+# Yes! matched signal is correct
+# 
+# loop = 0 data is matched, go to next data
+# begin Inserting first pixel data and target_label at 21121 ns
+# --------------------------------------------------------------
+# start_train_sw is high, let's check pixel data
+# --------------------------------------------------------------
+# [1.1] first_layer process is ended, and check end_state1
+# end_state1 signal is detected!
+# --------------------------------------------------------------
+# [1.2] check state is FIRST_LAYER at 36860 ns
+# Yes!, state is FIRST_LAYER!
+# --------------------------------------------------------------
+# [1.3] check hidden_neuron value at 36860 ns
+# --------------------------------------------------------------
+# [2.0]check state is SECOND_LAYER at 36880 ns
+# Yes!, state is SECOND_LAYER!
+# --------------------------------------------------------------
+# [2.1] check hidden_multiply value of SECOND_LAYER
+# --------------------------------------------------------------
+# [2.2] state2 is ended, check end_state2 signal at 42020 ns
+# Yes!, end_state2 signal is detected
+# --------------------------------------------------------------
+# [2.3] check output_neuron value of SECOND_LAYER state
+# output_neuron[ 0] = 168066006
+# output_neuron[ 1] = 667622870
+# output_neuron[ 2] = 1318387206
+# output_neuron[ 3] = 1007570035
+# output_neuron[ 4] = -2102030497
+# output_neuron[ 5] = 937413084
+# output_neuron[ 6] = 1339498269
+# output_neuron[ 7] = -2138792238
+# output_neuron[ 8] = 1149846569
+# output_neuron[ 9] = -1414951628
+# --------------------------------------------------------------
+# [3.0] let's check current state is COMPARE at 42040 ns
+# Nice!! Current state is COMPARE
+# --------------------------------------------------------------
+# [3.1] check end_state3 signal is detected at 42200 ns
+# Yes!, end_state3 signal is detected
+# --------------------------------------------------------------
+# [3.2] check output_neuron value and one_hot at 42200 ns
+# output_neuron_onehot value is correct
+# --------------------------------------------------------------
+# [3.3] check matched signal for COMPARE module
+# Yes! matched signal is correct
+# loop = 1 data is not matched, so backpropagation process
+# --------------------------------------------------------------
+# [4.0] check current state is UPDATE_SECOND_LAYER
+# Yep!, current state is UPDATE_SECOND_LAYER
+# --------------------------------------------------------------
+# [4.1] Check, start_pos and start_neg signal at 42221 ns
+# start_pos : 64,output_neuron_onehot = 64
+# start_neg : 64target_label_onehot =  4
+# --------------------------------------------------------------
+# [4.2] Check 'update_second_layer signal
+# update_second_layer is good!
+# --------------------------------------------------------------
+# [4.3] delta_bias2 data check
+# delta_bias pos data has no error, 
+# delta_bias neg data has no error, 
+# --------------------------------------------------------------
+# [4.4] delta_weight2 data check
+# --------------------------------------------------------------
+# [4.5] Check start_state5 signal detect
+# Success! start_state5 signal is detected!
+# --------------------------------------------------------------
+# [5.0] Check state is [5]DERIVATIVE_HIDDEN
+# state is correct
+# --------------------------------------------------------------
+# [5.1] Check start_backprop signal
+# start_backprop = 0001000100
+# [5.2] state5 is ended at 52501 ns
+# --------------------------------------------------------------
+# [6.0] Check state is [6] UPDATE_FIRST_LAYER at 52521 ns
+# current state is UPDATE_FIRST_LAYER
+# --------------------------------------------------------------
+# [6.1] Check update_first_layer is 1'b1 at 52541 ns
+# update_first_layer signal is correct
+# --------------------------------------------------------------
+# [6.2] delta_bias1 value checking
+# --------------------------------------------------------------
+# [6.3] delta_weight1 value checking
+# --------------------------------------------------------------
+# [6.4] end_state6 signal checking
+# end_state6 is high
+# begin Inserting first pixel data and target_label at 68222 ns
+# --------------------------------------------------------------
+# start_train_sw is high, let's check pixel data
+# --------------------------------------------------------------
+# [1.1] first_layer process is ended, and check end_state1
+# end_state1 signal is detected!
+# --------------------------------------------------------------
+# [1.2] check state is FIRST_LAYER at 83960 ns
+# Yes!, state is FIRST_LAYER!
+# --------------------------------------------------------------
+# [1.3] check hidden_neuron value at 83960 ns
+# --------------------------------------------------------------
+# [2.0]check state is SECOND_LAYER at 83980 ns
+# Yes!, state is SECOND_LAYER!
+# --------------------------------------------------------------
+# [2.1] check hidden_multiply value of SECOND_LAYER
+# --------------------------------------------------------------
+# [2.2] state2 is ended, check end_state2 signal at 89120 ns
+# Yes!, end_state2 signal is detected
+# --------------------------------------------------------------
+# [2.3] check output_neuron value of SECOND_LAYER state
+# output_neuron[ 0] = -1074245921
+# output_neuron[ 1] = 931187996
+# output_neuron[ 2] = 269338438
+# output_neuron[ 3] = 403263205
+# output_neuron[ 4] = -250300875
+# output_neuron[ 5] = -232719720
+# output_neuron[ 6] = -249003395
+# output_neuron[ 7] = 313875211
+# output_neuron[ 8] = 180574865
+# output_neuron[ 9] = -208579715
+# --------------------------------------------------------------
+# [3.0] let's check current state is COMPARE at 89140 ns
+# Nice!! Current state is COMPARE
+# --------------------------------------------------------------
+# [3.1] check end_state3 signal is detected at 89300 ns
+# Yes!, end_state3 signal is detected
+# --------------------------------------------------------------
+# [3.2] check output_neuron value and one_hot at 89300 ns
+# output_neuron_onehot value is correct
+# --------------------------------------------------------------
+# [3.3] check matched signal for COMPARE module
+# Yes! matched signal is correct
+# 
+# loop = 2 data is matched, go to next data
+# begin Inserting first pixel data and target_label at 89301 ns
+# --------------------------------------------------------------
+# start_train_sw is high, let's check pixel data
+# --------------------------------------------------------------
+# [1.1] first_layer process is ended, and check end_state1
+# end_state1 signal is detected!
+# --------------------------------------------------------------
+# [1.2] check state is FIRST_LAYER at 105040 ns
+# Yes!, state is FIRST_LAYER!
+# --------------------------------------------------------------
+# [1.3] check hidden_neuron value at 105040 ns
+# --------------------------------------------------------------
+# [2.0]check state is SECOND_LAYER at 105060 ns
+# Yes!, state is SECOND_LAYER!
+# --------------------------------------------------------------
+# [2.1] check hidden_multiply value of SECOND_LAYER
+# --------------------------------------------------------------
+# [2.2] state2 is ended, check end_state2 signal at 110200 ns
+# Yes!, end_state2 signal is detected
+# --------------------------------------------------------------
+# [2.3] check output_neuron value of SECOND_LAYER state
+# output_neuron[ 0] = 1721372214
+# output_neuron[ 1] = -1334215850
+# output_neuron[ 2] = 176948991
+# output_neuron[ 3] = -280611537
+# output_neuron[ 4] = -802519065
+# output_neuron[ 5] = -81782706
+# output_neuron[ 6] = 870315701
+# output_neuron[ 7] = 59576050
+# output_neuron[ 8] = 120125496
+# output_neuron[ 9] = 294276287
+# --------------------------------------------------------------
+# [3.0] let's check current state is COMPARE at 110220 ns
+# Nice!! Current state is COMPARE
+# --------------------------------------------------------------
+# [3.1] check end_state3 signal is detected at 110380 ns
+# Yes!, end_state3 signal is detected
+# --------------------------------------------------------------
+# [3.2] check output_neuron value and one_hot at 110380 ns
+# output_neuron_onehot value is correct
+# --------------------------------------------------------------
+# [3.3] check matched signal for COMPARE module
+# Yes! matched signal is correct
+# 
+# loop = 3 data is matched, go to next data
+# begin Inserting first pixel data and target_label at 110381 ns
+# --------------------------------------------------------------
+# start_train_sw is high, let's check pixel data
+# End time: 00:12:13 on May 17,2021, Elapsed time: 0:01:44
+# Errors: 0, Warnings: 0

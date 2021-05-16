@@ -1,0 +1,517 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis
+vaccumulator1
+Z1 !s110 1621177576
+!i10b 1
+!s100 F[0LKUb=m67LJYXl0@91z3
+IRCbSnZNB?A@cZ?LiIUN^50
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1610953557
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/accumulator1.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/accumulator1.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1621177576.000000
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/accumulator1.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/accumulator1.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vaccumulator2
+Z7 !s110 1621177578
+!i10b 1
+!s100 JnVW;JX7nL7V4F@;HMVa32
+ITQQFPTHGL>6]g@VS4J15M1
+R2
+R0
+Z8 w1610888168
+Z9 8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply2.v
+Z10 FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply2.v
+L0 40
+R3
+r1
+!s85 0
+31
+Z11 !s108 1621177578.000000
+Z12 !s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply2.v|
+Z13 !s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply2.v|
+!i113 1
+R5
+R6
+vbias1
+R1
+!i10b 1
+!s100 22iYXUHmTYY_oE<JPhP1=3
+IQkSl<o;M]Bc?8c`S4<H?W0
+R2
+R0
+w1610975005
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias1.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias1.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias1.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias1.v|
+!i113 1
+R5
+R6
+vbias2
+R1
+!i10b 1
+!s100 Xz8eldeo<CKk:U4IAo[7I1
+I7]k;EDCOiz?]9?UfHER4i2
+R2
+R0
+w1621176118
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias2.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias2.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/bias2.v|
+!i113 1
+R5
+R6
+vbuffer
+R1
+!i10b 1
+!s100 kcP]9]kSY@jH;kUQ=5>ee3
+IHTIooBlUz^CEQ4]lRj0:=1
+R2
+R0
+w1615926623
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/buffer.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/buffer.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/buffer.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/buffer.v|
+!i113 1
+R5
+R6
+vclock_frequency_divider
+Z14 !s110 1621177577
+!i10b 1
+!s100 M1lgAJZoMZ6O:g6UIMJAH2
+I6jfk3M6o8CQeYk7VmJVZM3
+R2
+R0
+Z15 w1611898268
+Z16 8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/UART receiver.v
+Z17 FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/UART receiver.v
+L0 106
+R3
+r1
+!s85 0
+31
+Z18 !s108 1621177577.000000
+Z19 !s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/UART receiver.v|
+Z20 !s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/UART receiver.v|
+!i113 1
+R5
+R6
+vdelta_bias1
+R14
+!i10b 1
+!s100 FMkXSH?JDVM_h1P@=3PDR1
+IO4<b@=A<`T7CNgI@kQXGh0
+R2
+R0
+Z21 w1615926503
+Z22 8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight1.v
+Z23 FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight1.v
+L0 66
+R3
+r1
+!s85 0
+31
+R18
+Z24 !s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight1.v|
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight1.v|
+!i113 1
+R5
+R6
+vdelta_bias2
+R14
+!i10b 1
+!s100 :^k2:<bAUz2=4RCazMn:X0
+IEmYaF;;:kG`0N2kW[m`Jj1
+R2
+R0
+Z26 w1615926516
+Z27 8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight2.v
+Z28 FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight2.v
+L0 91
+R3
+r1
+!s85 0
+31
+R18
+Z29 !s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight2.v|
+Z30 !s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/delta_weight2.v|
+!i113 1
+R5
+R6
+vdelta_weight1
+R14
+!i10b 1
+!s100 VfJTi0CN[X7bYl9`6SQ1:1
+I9F]k`aG8_LQ^cXR<c0lO60
+R2
+R0
+R21
+R22
+R23
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+R24
+R25
+!i113 1
+R5
+R6
+vdelta_weight2
+R14
+!i10b 1
+!s100 X=PI:fC_;ALan<>ScQ?Gl1
+Id9`fS>M?D[]=09ZUkUo4n3
+R2
+R0
+R26
+R27
+R28
+L0 8
+R3
+r1
+!s85 0
+31
+R18
+R29
+R30
+!i113 1
+R5
+R6
+vderivative_hidden_neuron
+R14
+!i10b 1
+!s100 cXGAa<zC]M7VM]4AP]R;b0
+IT1`DnR3V5fjG6m1GOAd[D2
+R2
+R0
+w1610942982
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/derivative_hidden_neuron.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/derivative_hidden_neuron.v
+L0 5
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/derivative_hidden_neuron.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/derivative_hidden_neuron.v|
+!i113 1
+R5
+R6
+vfirst_layer_cell
+R14
+!i10b 1
+!s100 odDjX7fhhloV5Mkh8cMKb1
+I9Sz=f[f6aBjionP2zOK`l1
+R2
+R0
+w1610956890
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/first_layer_cell.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/first_layer_cell.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/first_layer_cell.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/first_layer_cell.v|
+!i113 1
+R5
+R6
+vNeural_Network
+R14
+!i10b 1
+!s100 hJXJ]Ok06b0;lkbSAedb72
+I`<YMc:PdW_iMakJ4iiQ=O2
+R2
+R0
+w1614069367
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_network.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_network.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_network.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_network.v|
+!i113 1
+R5
+R6
+n@neural_@network
+vNeural_Network_Synthesis
+R14
+!i10b 1
+!s100 1]iBGW=iIk?9e94ogT65=0
+IQ_GEDCFiEC64bdEGBZI[K3
+R2
+R0
+w1615925951
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_Synthesis2.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_Synthesis2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_Synthesis2.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_Synthesis2.v|
+!i113 1
+R5
+R6
+n@neural_@network_@synthesis
+vNeural_Network_tb
+R14
+!i10b 1
+!s100 iKgC3M]X1C`m6gk^[D2:c2
+Ie]RCocihLzi^JYmk]0Mo=2
+R2
+R0
+w1611332781
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_test.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_test.v
+L0 3
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_test.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/Neural_Network_test.v|
+!i113 1
+R5
+R6
+n@neural_@network_tb
+vsecond_layer_cell
+R14
+!i10b 1
+!s100 XfbLD4><E8];VQ7TSYc;82
+I`8OkdHbik`GVE2@C`;^;O2
+R2
+R0
+w1615922889
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/second_layer_cell.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/second_layer_cell.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/second_layer_cell.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/second_layer_cell.v|
+!i113 1
+R5
+R6
+vtransfer_onehot_and_compare
+R1
+!i10b 1
+!s100 ^TGK8GnoWaf:`=MWQY28E3
+II?J0DAlSRCg0:T[_Ad^k33
+R2
+R0
+w1615926722
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/compare.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/compare.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/compare.v|
+!s90 -reportprogress|300|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/compare.v|
+!i113 1
+R5
+R6
+vuart
+R14
+!i10b 1
+!s100 MLWkf?30EZm<fnmCl;LO@1
+IzcZ=n[dNllGHERHN`lZK<2
+R2
+R0
+w1613551713
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart.v|
+!i113 1
+R5
+R6
+vuart_rx
+R14
+!i10b 1
+!s100 Dz]n1KE^jGaUeEXKK0MT40
+I?gHhVI96K;FB7<SMDgG:C3
+R2
+R0
+R15
+R16
+R17
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R5
+R6
+vuart_tx
+R7
+!i10b 1
+!s100 kRGLoUK;Xm5a6DT:o@MdC3
+Ih0U]@V`;9RlD4dWVNib=32
+R2
+R0
+w1613720499
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart_tx.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart_tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart_tx.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/uart_tx.v|
+!i113 1
+R5
+R6
+vweight_memory1
+R7
+!i10b 1
+!s100 ^RoRmf5:1Lh=aF`]KaoLK0
+IT:3V;z4Kh:9cDHZXjTWC_0
+R2
+R0
+Z31 w1621176079
+Z32 8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_memory.v
+Z33 FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+Z34 !s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_memory.v|
+Z35 !s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_memory.v|
+!i113 1
+R5
+R6
+vweight_memory2
+R7
+!i10b 1
+!s100 DCTOjOm_JcUz9k1F5;mzA2
+IkzLSeI<=KO@L`=VYe7chS1
+R2
+R0
+R31
+R32
+R33
+L0 344
+R3
+r1
+!s85 0
+31
+R11
+R34
+R35
+!i113 1
+R5
+R6
+vweighted_sum1
+R7
+!i10b 1
+!s100 SClmGhcc`3`gWGXcZTJNa0
+IH4k`J7=Y0RAC31ZlAVmQ40
+R2
+R0
+w1610970958
+8C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply.v
+FC:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply.v|
+!s90 -reportprogress|30|-work|work|C:/Users/User/Desktop/skku/git/Mnist_Network_FPGA/Synthesis/weight_multiply.v|
+!i113 1
+R5
+R6
+vweighted_sum2
+R7
+!i10b 1
+!s100 HO:hon]_zZj>427QcTIgj0
+IGAXzD[[]Q^ZB_nMM:9JSE0
+R2
+R0
+R8
+R9
+R10
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R5
+R6
