@@ -375,16 +375,16 @@ reg [COUNT_BIT2-1:0] count;   // 0 ~ NHIDDEN-1
 
 /* our initialized memory data */
 initial begin
-    if (NUM == 0) $readmemh("weight_value/weight_memory2_0.txt", weight_memory);
-    if (NUM == 1) $readmemh("weight_value/weight_memory2_1.txt", weight_memory);
-    if (NUM == 2) $readmemh("weight_value/weight_memory2_2.txt", weight_memory);
-    if (NUM == 3) $readmemh("weight_value/weight_memory2_3.txt", weight_memory);
-    if (NUM == 4) $readmemh("weight_value/weight_memory2_4.txt", weight_memory);
-    if (NUM == 5) $readmemh("weight_value/weight_memory2_5.txt", weight_memory);
-    if (NUM == 6) $readmemh("weight_value/weight_memory2_6.txt", weight_memory);
-    if (NUM == 7) $readmemh("weight_value/weight_memory2_7.txt", weight_memory);
-    if (NUM == 8) $readmemh("weight_value/weight_memory2_8.txt", weight_memory);
-    if (NUM == 9) $readmemh("weight_value/weight_memory2_9.txt", weight_memory);
+    if (NUM == 0) $readmemh("weight_memory2_0.txt", weight_memory);
+    if (NUM == 1) $readmemh("weight_memory2_1.txt", weight_memory);
+    if (NUM == 2) $readmemh("weight_memory2_2.txt", weight_memory);
+    if (NUM == 3) $readmemh("weight_memory2_3.txt", weight_memory);
+    if (NUM == 4) $readmemh("weight_memory2_4.txt", weight_memory);
+    if (NUM == 5) $readmemh("weight_memory2_5.txt", weight_memory);
+    if (NUM == 6) $readmemh("weight_memory2_6.txt", weight_memory);
+    if (NUM == 7) $readmemh("weight_memory2_7.txt", weight_memory);
+    if (NUM == 8) $readmemh("weight_memory2_8.txt", weight_memory);
+    if (NUM == 9) $readmemh("weight_memory2_9.txt", weight_memory);
 end
 /**
  *  NHIDDEN data is printed out parallel

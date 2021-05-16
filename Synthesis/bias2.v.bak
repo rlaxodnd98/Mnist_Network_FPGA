@@ -24,16 +24,16 @@ reg end_state2_reg;                                     // output: end_state2
 
 /* initial bias data block */
 initial begin
-    if (NUM == 0) $readmemh("bias_value/bias_memory2_0.txt", bias);
-    if (NUM == 1) $readmemh("bias_value/bias_memory2_1.txt", bias);
-    if (NUM == 2) $readmemh("bias_value/bias_memory2_2.txt", bias);
-    if (NUM == 3) $readmemh("bias_value/bias_memory2_3.txt", bias);
-    if (NUM == 4) $readmemh("bias_value/bias_memory2_4.txt", bias);
-    if (NUM == 5) $readmemh("bias_value/bias_memory2_5.txt", bias);
-    if (NUM == 6) $readmemh("bias_value/bias_memory2_6.txt", bias);
-    if (NUM == 7) $readmemh("bias_value/bias_memory2_7.txt", bias);
-    if (NUM == 8) $readmemh("bias_value/bias_memory2_8.txt", bias);
-    if (NUM == 9) $readmemh("bias_value/bias_memory2_9.txt", bias);
+    if (NUM == 0) $readmemh("bias_memory2_0.txt", bias);
+    if (NUM == 1) $readmemh("bias_memory2_1.txt", bias);
+    if (NUM == 2) $readmemh("bias_memory2_2.txt", bias);
+    if (NUM == 3) $readmemh("bias_memory2_3.txt", bias);
+    if (NUM == 4) $readmemh("bias_memory2_4.txt", bias);
+    if (NUM == 5) $readmemh("bias_memory2_5.txt", bias);
+    if (NUM == 6) $readmemh("bias_memory2_6.txt", bias);
+    if (NUM == 7) $readmemh("bias_memory2_7.txt", bias);
+    if (NUM == 8) $readmemh("bias_memory2_8.txt", bias);
+    if (NUM == 9) $readmemh("bias_memory2_9.txt", bias);
 end
 
 
